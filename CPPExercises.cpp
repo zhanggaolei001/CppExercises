@@ -13,68 +13,73 @@
 #include "2-1-zhanggaolei.h"
 #include "2-2-zhanggaolei.h"
 #include "2-3-zhanggaolei.h"
+#include "Circle.h"
 #include <time.h>
+#include <string> 
+#include "Student.h"
+#include "Date.h"
+using namespace std;
 void test1_1()
 {
 	int x = 1, y = 2;
-	std::cout << "初始值           :x=1,y=2\n" << "调用swap1后的结果:";
+	cout << "初始值           :x=1,y=2\n" << "调用swap1后的结果:";
 	swap1(x, y);
-	std::cout << "x=" << x << ",y=" << y;
+	cout << "x=" << x << ",y=" << y;
 
-	std::cout << "\n调用swap2后的结果:";
+	cout << "\n调用swap2后的结果:";
 	swap2(x, y);
-	std::cout << "x=" << x << ",y=" << y << "\n";
+	cout << "x=" << x << ",y=" << y << "\n";
 }
 void test1_2()
 {
-	std::cout << "please enter one integer: \n";
+	cout << "please enter one integer: \n";
 	int i = 0;
-	std::cin >> i;
+	cin >> i;
 	int re = factorial(i);
-	std::cout << i << "'s factorial is:" << re << "\n";
+	cout << i << "'s factorial is:" << re << "\n";
 }
 void test1_3()
 {
-	std::cout << "please enter one integer: \n";
+	cout << "please enter one integer: \n";
 	int i = 0;
-	std::cin >> i;
+	cin >> i;
 	bool re = is_primer(i);
 	if (re)
 	{
-		std::cout << i << " is primer" << "\n";
+		cout << i << " is primer" << "\n";
 	}
 	else
 	{
-		std::cout << i << " is not primer" << "\n";
+		cout << i << " is not primer" << "\n";
 	}
 }
 void test1_4()
 {
 	double a, b, c, d;
-	std::cout << "\nplease enter the first number: \n";
-	std::cin >> a;
-	std::cout << "\nplease enter the second number:\n";
-	std::cin >> b;
-	std::cout << "\nplease enter the third number: \n";
-	std::cin >> c;
-	std::cout << "\nplease enter the forth number: \n";
-	std::cin >> d;
+	cout << "\nplease enter the first number: \n";
+	cin >> a;
+	cout << "\nplease enter the second number:\n";
+	cin >> b;
+	cout << "\nplease enter the third number: \n";
+	cin >> c;
+	cout << "\nplease enter the forth number: \n";
+	cin >> d;
 	double re = cal_avrange(a, b, c, d);
-	std::cout << "\nfour number you have input were:" << a << "," << b << "," << c << "," << d << " ,there average value is " << re << "\n";
+	cout << "\nfour number you have input were:" << a << "," << b << "," << c << "," << d << " ,there average value is " << re << "\n";
 
 }
 void test1_5()
 {
 
 	int year, month, day;
-	std::cout << "\nplease enter the number of year: \n";
-	std::cin >> year;
-	std::cout << "\nplease enter the number of month:\n";
-	std::cin >> month;
-	std::cout << "\nplease enter the number of day: \n";
-	std::cin >> day;
+	cout << "\nplease enter the number of year: \n";
+	cin >> year;
+	cout << "\nplease enter the number of month:\n";
+	cin >> month;
+	cout << "\nplease enter the number of day: \n";
+	cin >> day;
 	int n = get_day_of_year(year, month, day);
-	std::cout << year << "年" << month << "月" << day << "日 is the " << n << " day of the year\n";
+	cout << year << "年" << month << "月" << day << "日 is the " << n << " day of the year\n";
 
 
 }
@@ -83,46 +88,46 @@ void test2_1()
 {
 
 	double x, y;
-	std::cout << "\nplease enter the number x: \n";
-	std::cin >> x;
-	std::cout << "\nplease enter the number y:\n";
-	std::cin >> y;
+	cout << "\nplease enter the number x: \n";
+	cin >> x;
+	cout << "\nplease enter the number y:\n";
+	cin >> y;
 	get_polar_coordinates_quote(x, y);
-	std::cout << "\nget_polar_coordinates_quote(&x,&y):x=" << x << ",y=" << y;
+	cout << "\nget_polar_coordinates_quote(&x,&y):x=" << x << ",y=" << y;
 
 
 
-	std::cout << "\nplease Re-enter the number x: \n";
-	std::cin >> x;
-	std::cout << "\nplease Re-enter the number y:\n";
-	std::cin >> y;
+	cout << "\nplease Re-enter the number x: \n";
+	cin >> x;
+	cout << "\nplease Re-enter the number y:\n";
+	cin >> y;
 	get_polar_coordinates(&x, &y);
-	std::cout << "\nget_polar_coordinates(*x, *y):x=" << x << ",y=" << y;
+	cout << "\nget_polar_coordinates(*x, *y):x=" << x << ",y=" << y;
 
 
 
-	std::cout << "\nplease Re-enter the number x Again: \n";
-	std::cin >> x;
-	std::cout << "\nplease Re-enter the number y Again:\n";
-	std::cin >> y;
+	cout << "\nplease Re-enter the number x Again: \n";
+	cin >> x;
+	cout << "\nplease Re-enter the number y Again:\n";
+	cin >> y;
 	y = get_polar_coordinates_return_y_change_x(&x, y);
-	std::cout << "\nget_polar_coordinates_return_y_change_x(&x, y):x=" << x << ",y=" << y;
+	cout << "\nget_polar_coordinates_return_y_change_x(&x, y):x=" << x << ",y=" << y;
 }
 void test2_2()
 {
 	const int length = 100;
 	char c[length];
-	std::cout << "please input a string(max length:10)" << std::endl;
-	std::cin.getline(&c[0], length);
-	std::cout << c;
+	cout << "please input a string(max length:10)" << endl;
+	cin.getline(&c[0], length);
+	cout << c;
 
 	int count_of_a_Z = 0, count_of_white_space = 0, count_of_0_9 = 0, count_of_other = 0;
 	analysis(&c[0], count_of_a_Z, count_of_white_space, count_of_0_9, count_of_other);
-	std::cout << std::endl;
-	std::cout << "输入的字母数:" << count_of_a_Z << std::endl;
-	std::cout << "输入的空格数:" << count_of_white_space << std::endl;
-	std::cout << "输入的数字数:" << count_of_0_9 << std::endl;
-	std::cout << "其他字符数量:" << count_of_other << std::endl;
+	cout << endl;
+	cout << "输入的字母数:" << count_of_a_Z << endl;
+	cout << "输入的空格数:" << count_of_white_space << endl;
+	cout << "输入的数字数:" << count_of_0_9 << endl;
+	cout << "其他字符数量:" << count_of_other << endl;
 }
 void test2_3() {
 	srand(time(0));
@@ -130,21 +135,54 @@ void test2_3() {
 	const int length = 10;// rand();
 	float arr[length];
 	srand(time(0));
-	std::cout << "随机数据:" << std::endl;
+	cout << "随机数据:" << endl;
 
 	for (size_t i = 0; i < length; i++)
 	{
 		arr[i] = (float)rand() / 3;
-		std::cout << arr[i] << ",";
+		cout << arr[i] << ",";
 	}
-	std::cout << std::endl;
+	cout << endl;
 	int max_index = 0;
 	int min_index = 0;
 	get_max_min(arr, length, max_index, min_index);
-	std::cout << "最大值:" << arr[max_index] << std::endl;
-	std::cout << "最小值:" << arr[min_index] << std::endl;
-	std::cout << "最大值索引:" << max_index << std::endl;
-	std::cout << "最小值索引:" << min_index << std::endl;
+	cout << "最大值:" << arr[max_index] << endl;
+	cout << "最小值:" << arr[min_index] << endl;
+	cout << "最大值索引:" << max_index << endl;
+	cout << "最小值索引:" << min_index << endl;
+
+}
+void test3_1() {
+	double R = 0;
+	cout << "请输入圆的半径R" << endl;
+	cin >> R;
+	Circle* c = new Circle(R);
+	cout << "使用成员函数面积:" << c->GetArea() << endl;
+	auto area = GetArea(*c);
+	cout << "使用友元函数计算面积:" << c->GetArea() << endl;
+
+}
+
+void test3_2() {
+	string name;
+	int age;
+	int grade;
+	cout << "请输入学生姓名:" << endl;
+	getline(cin, name, '\n');
+	cout << "请输入年龄:" << endl;
+	cin >> age;
+	cout << "请输入学号:" << endl;
+	cin >> grade;
+	Student s = Student(name, age, grade);  
+	cout << "使用成员函数修改学生姓名为\"李四\""<<endl;
+	s.SetName("李四");
+}
+void test3_3() {
+	Date d =Date();
+	cout << "请输入一个日期(格式:2019 12 07):" << endl;
+	cin >> d;
+	cout << d;
+	cout << "============================================" << endl;
 
 }
 int main()
@@ -157,7 +195,10 @@ int main()
 	//test1_5();
 	//test2_1();
 	//test2_2();
-	test2_3();
+	//test2_3();
+	//test3_1();
+	//test3_2();
+	test3_3();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
