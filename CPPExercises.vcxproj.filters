@@ -108,4 +108,7 @@
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="C++上机实验题目(2012版)H.pdf" />
+  </ItemGroup>
 </Project>

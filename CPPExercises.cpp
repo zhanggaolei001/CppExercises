@@ -92,26 +92,20 @@ void test2_1()
 	cin >> x;
 	cout << "\nplease enter the number y:\n";
 	cin >> y;
-	get_polar_coordinates_quote(x, y);
-	cout << "\nget_polar_coordinates_quote(&x,&y):x=" << x << ",y=" << y;
 
 
+	double* c=new double, * q=new double;
+	get_polar_coordinates_ptr(x, y,c,q);
+	cout << "\nc=" << *c << ",q=" << *q;
+	 
+	double c2, q2; 
+	q2 = get_polar_coordinates_return_y_change_x(x, y, c2);
+	cout << "\nc2=" << c2 << ",q2=" << q2;
 
-	cout << "\nplease Re-enter the number x: \n";
-	cin >> x;
-	cout << "\nplease Re-enter the number y:\n";
-	cin >> y;
-	get_polar_coordinates(&x, &y);
-	cout << "\nget_polar_coordinates(*x, *y):x=" << x << ",y=" << y;
+	double c3,  q3; 
+	get_polar_coordinates_quote(x, y, c3, q3);
+	cout << "\nc3x=" << c3 << ",q3=" << q3;
 
-
-
-	cout << "\nplease Re-enter the number x Again: \n";
-	cin >> x;
-	cout << "\nplease Re-enter the number y Again:\n";
-	cin >> y;
-	y = get_polar_coordinates_return_y_change_x(&x, y);
-	cout << "\nget_polar_coordinates_return_y_change_x(&x, y):x=" << x << ",y=" << y;
 }
 void test2_2()
 {
@@ -193,12 +187,12 @@ int main()
 	//test1_3();
 	//test1_4();
 	//test1_5();
-	//test2_1();
+	test2_1();
 	//test2_2();
 	//test2_3();
 	//test3_1();
 	//test3_2();
-	test3_3();
+	//test3_3();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
