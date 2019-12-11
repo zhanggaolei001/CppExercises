@@ -1,7 +1,11 @@
 #include "Teacher.h"
 
 std::string Teacher::Display()
+{ 
+	return Name +",部门:"+ Department;
+}
+
+Teacher::~Teacher()
 {
-	cout << Name.c_str();
-	cout << Department.c_str();
+	cout << "Teacher 析构了";
 }

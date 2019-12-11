@@ -9,4 +9,5 @@ public:
 	void SetName(std::string name);
 	void SetNumber(unsigned int number);
 	virtual std::string Display()=0;
+	 
 };

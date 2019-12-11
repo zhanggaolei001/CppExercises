@@ -21,10 +21,22 @@
     <ClCompile Include="Person.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Student.cpp">
+    <ClCompile Include="Teacher.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Teacher.cpp">
+    <ClCompile Include="Student2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cylinder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Cone.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +44,22 @@
     <ClInclude Include="Person.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Student.h">
+    <ClInclude Include="Teacher.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Teacher.h">
+    <ClInclude Include="Student2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Cone.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

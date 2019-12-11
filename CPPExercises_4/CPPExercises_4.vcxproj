@@ -147,14 +147,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CircleBase.cpp" />
+    <ClCompile Include="Cone.cpp" />
     <ClCompile Include="CPPExercises_4.cpp" />
+    <ClCompile Include="Cylinder.cpp" />
     <ClCompile Include="Person.cpp" />
-    <ClCompile Include="Student.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="Student2.cpp" />
     <ClCompile Include="Teacher.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CircleBase.h" />
+    <ClInclude Include="Cone.h" />
+    <ClInclude Include="Cylinder.h" />
     <ClInclude Include="Person.h" />
-    <ClInclude Include="Student.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="Student2.h" />
     <ClInclude Include="Teacher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

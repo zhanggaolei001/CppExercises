@@ -6,7 +6,7 @@ class Teacher :
 public:
 	std::string Title;
 	std::string Department;
-
 	std::string Display() override;
+	~Teacher() ;
 };
 

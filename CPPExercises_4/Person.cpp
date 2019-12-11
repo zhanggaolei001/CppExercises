@@ -2,13 +2,10 @@
 
 void Person::SetName(std::string name)
 {
+	Name = name;
 }
 
 void Person::SetNumber(unsigned int number)
 {
-}
-
-std::string Person::Display()
-{
-	return std::string();
-}
+	Number = number;
+} 
