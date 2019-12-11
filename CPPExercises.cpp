@@ -124,11 +124,9 @@ void test2_2()
 	cout << "其他字符数量:" << count_of_other << endl;
 }
 void test2_3() {
-	srand(time(0));
-
+	srand(time(0)); 
 	const int length = 10;// rand();
-	float arr[length];
-	srand(time(0));
+	float arr[length]; 
 	cout << "随机数据:" << endl;
 
 	for (size_t i = 0; i < length; i++)
@@ -175,7 +173,7 @@ void test3_3() {
 	Date d =Date();
 	cout << "请输入一个日期(格式:2019 12 07):" << endl;
 	cin >> d;
-	cout << d;
+	cout << d<<endl;
 	cout << "============================================" << endl;
 
 }
@@ -187,12 +185,12 @@ int main()
 	//test1_3();
 	//test1_4();
 	//test1_5();
-	test2_1();
+	//test2_1();
 	//test2_2();
 	//test2_3();
 	//test3_1();
 	//test3_2();
-	//test3_3();
+	 test3_3();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

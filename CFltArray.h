@@ -7,10 +7,7 @@ public:
 	CFltArray& operator=(float* cfa);
 	CFltArray(float* cfa, unsigned int nSize);
 	CFltArray(const CFltArray& src);
-	CFltArray()
-	{
-
-	}
+	 
 	int Size();
 
 	~CFltArray();

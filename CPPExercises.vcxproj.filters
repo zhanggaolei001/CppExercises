@@ -25,6 +25,9 @@
     <Filter Include="源文件\3-4-zhanggaolei">
       <UniqueIdentifier>{11d19302-2126-49f6-8eab-4a0b1f93124e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\4-1-zhanggaolei">
+      <UniqueIdentifier>{7091a683-af70-4eb1-8cfe-39f74c7d2f2b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPPExercises.cpp">
