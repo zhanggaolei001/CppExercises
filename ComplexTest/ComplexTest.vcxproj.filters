@@ -15,48 +15,36 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CPPExercises_4.cpp">
+    <ClCompile Include="ComplexTest.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Person.cpp">
+    <ClCompile Include="Complex.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Teacher.cpp">
+    <ClCompile Include="Mammal.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Student2.cpp">
+    <ClCompile Include="Dog.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Sphere.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Cylinder.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Cone.cpp">
+    <ClCompile Include="Cat.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Person.h">
+    <ClInclude Include="Complex.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Teacher.h">
+    <ClInclude Include="ComplexTest.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Student2.h">
+    <ClInclude Include="Mammal.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="CircleBase.h">
+    <ClInclude Include="Dog.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Sphere.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Cylinder.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Cone.h">
+    <ClInclude Include="Cat.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

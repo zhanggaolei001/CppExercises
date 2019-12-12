@@ -1,10 +1,10 @@
 #pragma once
 #include "CircleBase.h"
-class Sphere :
-	public CircleBase
+ class Sphere :public CircleBase
 {
 public:
-	double GetArea() override;
-	double GetVolume() override;
+	double GetArea() ;
+	double GetVolume() ;
+	Sphere(double r);
 };
 
