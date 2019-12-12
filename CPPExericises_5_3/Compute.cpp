@@ -1,3 +1,4 @@
+#pragma once
 #include "Compute.h"
 #include "Triangle.h"
 #include "Rectangle.h"
