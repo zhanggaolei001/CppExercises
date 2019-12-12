@@ -3,6 +3,9 @@
 class Cone :
 	public CircleBase
 {
-
+public:
+	double H;
+	double GetArea() override;
+	double GetVolume() override;
 };
 

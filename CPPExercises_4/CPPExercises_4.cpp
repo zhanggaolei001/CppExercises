@@ -13,12 +13,12 @@ int main()
 	ptr->SetNumber(10086);
 	ptr->Score = 99;
 	ptr->ClassOfGrade = 10;
-	cout << ptr->Display();
+	cout << ptr->Display().c_str();
 
 	Teacher lilaoshi = Teacher();
 	lilaoshi.SetName("李老师");
 	lilaoshi.Department = "数学组";
-	cout << lilaoshi.Display();
+	cout << lilaoshi.Display().c_str();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单

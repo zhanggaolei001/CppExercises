@@ -5,6 +5,6 @@ class Sphere :
 {
 public:
 	double GetArea() override;
-	int GetVolume() override;
+	double GetVolume() override;
 };
 
