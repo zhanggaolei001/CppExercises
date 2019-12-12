@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPExercises", "CPPExercises.vcxproj", "{8AAD8876-08FB-4BA2-84BD-06B4DD8B0D86}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPExercises1_2_3", "CPPExercises.vcxproj", "{8AAD8876-08FB-4BA2-84BD-06B4DD8B0D86}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPExercises_4", "CPPExercises_4\CPPExercises_4.vcxproj", "{9995AF98-F168-4415-A3C1-9A180F3F612D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ComplexTest", "ComplexTest\ComplexTest.vcxproj", "{45BE2BA6-CEC1-4B63-9185-57D795A73048}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPExercises_5", "ComplexTest\ComplexTest.vcxproj", "{45BE2BA6-CEC1-4B63-9185-57D795A73048}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPPExericises_5_3", "CPPExericises_5_3\CPPExericises_5_3.vcxproj", "{E6FB1496-1D6E-458D-A2FF-EEAB479F3044}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,14 @@ Global
 		{45BE2BA6-CEC1-4B63-9185-57D795A73048}.Release|x64.Build.0 = Release|x64
 		{45BE2BA6-CEC1-4B63-9185-57D795A73048}.Release|x86.ActiveCfg = Release|Win32
 		{45BE2BA6-CEC1-4B63-9185-57D795A73048}.Release|x86.Build.0 = Release|Win32
+		{E6FB1496-1D6E-458D-A2FF-EEAB479F3044}.Debug|x64.ActiveCfg = Debug|x64
+		{E6FB1496-1D6E-458D-A2FF-EEAB479F3044}.Debug|x64.Build.0 = Debug|x64
+		{E6FB1496-1D6E-458D-A2FF-EEAB479F3044}.Debug|x86.ActiveCfg = Debug|Win32
+		{E6FB1496-1D6E-458D-A2FF-EEAB479F3044}.Debug|x86.Build.0 = Debug|Win32
+		{E6FB1496-1D6E-458D-A2FF-EEAB479F3044}.Release|x64.ActiveCfg = Release|x64
+		{E6FB1496-1D6E-458D-A2FF-EEAB479F3044}.Release|x64.Build.0 = Release|x64
+		{E6FB1496-1D6E-458D-A2FF-EEAB479F3044}.Release|x86.ActiveCfg = Release|Win32
+		{E6FB1496-1D6E-458D-A2FF-EEAB479F3044}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

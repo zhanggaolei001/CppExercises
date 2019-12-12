@@ -38,8 +38,9 @@ void Test5_2()
 	delete(dog2);
 	cout << "删除delete一个指针后,狗的数量为:" << Dog::GetCount() << endl;
 	cat->print();
-	cout << "Main Function Ends";
+
 	cout << "狗的数量为:" << Dog::GetCount() << endl;
+	cout << "Main Function Ends";
 }
 
  
